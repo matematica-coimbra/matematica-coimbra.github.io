@@ -1,1 +1,45 @@
-Hello World
+<head>
+    <title>Matemática Coimbra</title>
+</head>
+
+<h1>Hello World</h1>
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd814VAVDcyLCmPhAnxnaV7zEK-C7_HfSrtyha4FulQt-tvsg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    Nome:<br>
+    <input type="text" name="entry.2005620554" id="entry.2005620554"><br>
+    Email:<br>
+    <input type="text" name="entry.1045781291" id="entry.1045781291"><br>
+    Telemóvel:<br>
+    <input type="text" name="entry.2024126210" id="entry.2024126210"><br>
+    Comentário:<br>
+    <input type="text" name="entry.965650928" id="entry.965650928"><br>
+    <input type="submit" value="Submit">
+  </form>
+<iframe name="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+<script src="assets/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+        alert('Your submission has been processed...');
+    });
+</script>
+
+<style type="text/css">
+    /*body {
+        margin: 0;
+    }*/
+</style>
+
+
+<!--
+
+https://docs.google.com/forms/d/e/1FAIpQLSd814VAVDcyLCmPhAnxnaV7zEK-C7_HfSrtyha4FulQt-tvsg
+/viewform?
+usp=pp_url
+&entry.2005620554=Monkey
+&entry.1045781291=monkey@onepiece.com
+&entry.2024126210=999888333
+&entry.965650928=commentHereGuys
+
+-->
