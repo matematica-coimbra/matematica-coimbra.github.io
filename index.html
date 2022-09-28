@@ -1,9 +1,23 @@
-<head>
-    <title>Matemática Coimbra</title>
-</head>
+---
+layout: default
+title: Explicações Matemática Coimbra
+---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-<h1>Hello World</h1>
+<p id="titulo">Explicações de Matemática</p>
+<p id="anos">9º ao 12º Ano & Universidade</p>
+<br/>
+<div id="loc">
+    <span id="loc_icon" class="material-symbols-outlined">&#xe55e;</span><!-- "pin_drop" icon -->
+    <div id="rua">Santo António dos Olivais</div>
+</div>
 
+<!--
+Freg. de Santo António dos Olivais - Coimbra
+-->
+
+
+<!--
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd814VAVDcyLCmPhAnxnaV7zEK-C7_HfSrtyha4FulQt-tvsg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
     Nome:<br>
     <input type="text" name="entry.2005620554" id="entry.2005620554"><br>
@@ -17,6 +31,8 @@
   </form>
 <iframe name="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
+<button id="submeter">Submeter</button>
+
 <script src="assets/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
@@ -25,10 +41,67 @@
     });
 </script>
 
+-->
+
 <style type="text/css">
-    /*body {
-        margin: 0;
-    }*/
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+    #loc {
+        background-color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: #03A9F4;
+        padding: 5px;
+        transition: 0.4s;
+        margin: 20px;
+    }
+    #loc_icon {
+        font-size: 48px;
+        user-select: none;
+        padding-right: 10px;
+        padding-left: 7px;
+    }
+    #rua {
+        min-width: 250px;
+        font-weight: bold;
+        visibility: hidden;
+    }
+    #loc:hover {
+        cursor: pointer;
+        border-radius: 30px;
+        width: 305px;
+        height: 60px;
+    }
+    #loc:hover > #rua {
+        visibility: visible;
+    }
+    #titulo {
+        font-family: 'Kanit', 'Oswald', 'Times New Roman';
+        font-size: 46px;
+        margin: 10px;
+    }
+    #anos {
+        font-family: 'Kanit', 'Oswald', 'Times New Roman';
+        font-size: 24px;
+        margin: 10px;
+    }
+    #submeter {
+        background-color: #db005c;
+        border:none;
+        color: white;
+        font-weight: bold;
+        width: 130px;
+        height: 45px;
+        border-radius: 10px;
+    }
+    #submeter:hover {
+        cursor:pointer;
+        font-weight: bold;
+    }
 </style>
 
 
