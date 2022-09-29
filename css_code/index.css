@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+.inpu {
+    border: none;
+    border-radius: 50px;
+    width: 325px;
+    height: 50px;
+    margin-top: 30px;
+    font-family: 'Kanit', 'Oswald', 'Times New Roman';
+    font-size: 16px;
+    color: #9E9E9E;
+    text-align: center;
+}
+.inpu:focus {
+    outline: none;
+}
+.subinpu {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50px;
+    width: 162px;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Kanit', 'Oswald', 'Times New Roman';
+    font-size: 16px;
+}
+.subinpu:hover {
+    cursor: pointer;
+}
+.formu {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contactar {
+    background-color: #E91E63;/*#FF9800*/
+    width: 325px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 10px;
+    transition: height 0.5s ease-out 0.3s, width 0.3s linear;
+}
+#contactar > p {
+    font-family: 'Kanit', 'Oswald', 'Times New Roman';
+    font-size: 20px;
+    margin-top: 22px;
+}
+#contactar:hover {
+    cursor: default;
+    height: 500px;
+    width: 800px;
+}
+#loc {
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #03A9F4;
+    transition: 0.4s;
+    margin: 20px;
+    font-family: 'Kanit', 'Oswald', 'Times New Roman';
+    font-size: 20px;
+}
+#loc_icon {
+    font-size: 48px;
+    padding-right: 5px;
+    padding-left: 13px;
+    user-select: none;
+}
+#rua {
+    min-width: 250px;
+    font-weight: bold;
+    visibility: hidden;
+}
+#loc:hover {
+    cursor: default;
+    border-radius: 50px;
+    width: 315px;
+    height: 75px;
+    padding-right: 10px;
+}
+#loc:hover > #rua {
+    visibility: visible;
+}
+#titulo {
+    font-family: 'Kanit', 'Oswald', 'Times New Roman';
+    font-size: 46px;
+    margin: 10px;
+}
+#anos {
+    font-family: 'Kanit', 'Oswald', 'Times New Roman';
+    font-size: 24px;
+    margin: 10px;
+}
+#titulo:hover, #anos:hover {
+    cursor: default;
+}
+#submeter {
+    background-color: #db005c;
+    border:none;
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+}
+#submeter:hover {
+    cursor:pointer;
+    font-weight: bold;
+}

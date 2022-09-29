@@ -10,18 +10,19 @@
 <body>
     <div id="header">
         <div class="hpages">Início</div>
-        <div class="hpages">Sobre</div>
+        <!--<div class="hpages">Sobre</div>-->
     </div>
     {{ content }}
 </body>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
     #header {
-        background-color: black;
+        background-color: #03A9F4;
         width: 100vw;
         height: 10vh;
-        padding: 5px;
-        padding-right: 400px;
+        padding-right: 15%;
         position: fixed;
         top: 0;
         display: flex;
@@ -30,10 +31,12 @@
         color: #03A9F4;
     }
     .hpages {
+        font-family: 'Kanit', 'Oswald', 'Times New Roman';
         font-size: 20px;
         padding-left: 20px;
         padding-right: 20px;
         font-weight: bold;
+        color: white;
     }
     .hpages:hover {
         cursor: pointer;

@@ -3,37 +3,38 @@ layout: default
 title: Explicações Matemática Coimbra
 ---
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" type="text/css" href="css_code/index.css" />
+<script src="assets/jquery.min.js"></script>
+<script type="text/javascript" src="js_code/index.js"></script> 
 
 <p id="titulo">Explicações de Matemática</p>
 <p id="anos">9º ao 12º Ano & Universidade</p>
 <br/>
 <div id="loc">
     <span id="loc_icon" class="material-symbols-outlined">&#xe55e;</span><!-- "pin_drop" icon -->
-    <div id="rua">Santo António dos Olivais</div>
+    <div id="rua">Santo António dos Olivais Coimbra</div>
 </div>
 
-<!--
-Freg. de Santo António dos Olivais - Coimbra
--->
+<div id="contactar" class="clic">
+    <p class="clic">Contactar</p>
+    <form class="formu clic" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd814VAVDcyLCmPhAnxnaV7zEK-C7_HfSrtyha4FulQt-tvsg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        <!--<label for="entry.2005620554">Nome</label>-->
+        <input class="inpu clic" placeholder="Nome" type="text" name="entry.2005620554" id="entry.2005620554">
+        <input class="inpu clic" placeholder="Email" type="text" name="entry.1045781291" id="entry.1045781291">
+        <input class="inpu clic" placeholder="Nº Telemóvel" type="text" name="entry.2024126210" id="entry.2024126210">
+        <input class="inpu clic" placeholder="Comentário" type="text" name="entry.965650928" id="entry.965650928">
+        <input class="subinpu clic" type="submit" value="Submeter">
+    </form>
+    <iframe class="clic" name="hidden_iframe" style="display:none;"></iframe> <!-- </iframe>onload="if(submitted) {}" -->
+</div>
 
 
+
 <!--
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd814VAVDcyLCmPhAnxnaV7zEK-C7_HfSrtyha4FulQt-tvsg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-    Nome:<br>
-    <input type="text" name="entry.2005620554" id="entry.2005620554"><br>
-    Email:<br>
-    <input type="text" name="entry.1045781291" id="entry.1045781291"><br>
-    Telemóvel:<br>
-    <input type="text" name="entry.2024126210" id="entry.2024126210"><br>
-    Comentário:<br>
-    <input type="text" name="entry.965650928" id="entry.965650928"><br>
-    <input type="submit" value="Submit">
-  </form>
-<iframe name="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
 
 <button id="submeter">Submeter</button>
 
-<script src="assets/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
     $('#gform').on('submit', function(e) {
@@ -42,67 +43,6 @@ Freg. de Santo António dos Olivais - Coimbra
 </script>
 
 -->
-
-<style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-    #loc {
-        background-color: white;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        color: #03A9F4;
-        padding: 5px;
-        transition: 0.4s;
-        margin: 20px;
-    }
-    #loc_icon {
-        font-size: 48px;
-        user-select: none;
-        padding-right: 10px;
-        padding-left: 7px;
-    }
-    #rua {
-        min-width: 250px;
-        font-weight: bold;
-        visibility: hidden;
-    }
-    #loc:hover {
-        cursor: pointer;
-        border-radius: 30px;
-        width: 305px;
-        height: 60px;
-    }
-    #loc:hover > #rua {
-        visibility: visible;
-    }
-    #titulo {
-        font-family: 'Kanit', 'Oswald', 'Times New Roman';
-        font-size: 46px;
-        margin: 10px;
-    }
-    #anos {
-        font-family: 'Kanit', 'Oswald', 'Times New Roman';
-        font-size: 24px;
-        margin: 10px;
-    }
-    #submeter {
-        background-color: #db005c;
-        border:none;
-        color: white;
-        font-weight: bold;
-        width: 130px;
-        height: 45px;
-        border-radius: 10px;
-    }
-    #submeter:hover {
-        cursor:pointer;
-        font-weight: bold;
-    }
-</style>
 
 
 <!--
