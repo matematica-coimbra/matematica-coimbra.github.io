@@ -15,38 +15,22 @@ title: Explicações Matemática Coimbra
     <div id="rua">Santo António dos Olivais Coimbra</div>
 </div>
 
+
+<!-- mudar de form para chamar diretamente o link com <a></a> -->
 <div id="contactar" class="clic">
     <p class="clic">Contactar</p>
-    <form class="formu clic" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd814VAVDcyLCmPhAnxnaV7zEK-C7_HfSrtyha4FulQt-tvsg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-        <!--<label for="entry.2005620554">Nome</label>-->
-        <input class="inpu clic" placeholder="Nome" type="text" name="entry.2005620554" id="entry.2005620554">
-        <input class="inpu clic" placeholder="Email" type="text" name="entry.1045781291" id="entry.1045781291">
-        <input class="inpu clic" placeholder="Nº Telemóvel" type="text" name="entry.2024126210" id="entry.2024126210">
-        <input class="inpu clic" placeholder="Comentário" type="text" name="entry.965650928" id="entry.965650928">
-        <input class="subinpu clic" type="submit" value="Submeter">
-    </form>
-    <iframe class="clic" name="hidden_iframe" style="display:none;"></iframe> <!-- </iframe>onload="if(submitted) {}" -->
+    <div class="formu clic">
+        <input id="name" class="inpu clic" placeholder="Nome" type="text">
+        <input id="email" class="inpu clic" placeholder="Email" type="text">
+        <input id="phone" class="inpu clic" placeholder="Nº Telemóvel" type="text">
+        <input id="comment" class="inpu clic" placeholder="Comentário" type="text">
+        <button class="subinpu clic" type="submit">Submeter</button>
+    </div>
 </div>
 
-
-
 <!--
-
-
-<button id="submeter">Submeter</button>
-
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-    $('#gform').on('submit', function(e) {
-        alert('Your submission has been processed...');
-    });
-</script>
-
--->
-
-
-<!--
-
+    <iframe class="clic" name="hidden_iframe" style="display:none;"></iframe> <!-- onload="if(submitted) {}" --
+    
 https://docs.google.com/forms/d/e/1FAIpQLSd814VAVDcyLCmPhAnxnaV7zEK-C7_HfSrtyha4FulQt-tvsg
 /viewform?
 usp=pp_url
