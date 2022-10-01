@@ -5,7 +5,7 @@
     border-radius: 50px;
     width: 325px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 35px;
     font-family: 'Kanit', 'Oswald', 'Times New Roman';
     font-size: 16px;
     color: #9E9E9E;
@@ -15,18 +15,20 @@
     outline: none;
 }
 .subinpu {
-    background-color: #4CAF50;
-    border: none;
+    background-color: #E91E63;
+    border: 3px solid white;
     border-radius: 50px;
-    width: 162px;
+    width: 325px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 35px;
     color: white;
     font-family: 'Kanit', 'Oswald', 'Times New Roman';
     font-size: 16px;
 }
 .subinpu:hover {
     cursor: pointer;
+    background-color: white;
+    color: #E91E63;
 }
 .formu {
     overflow: hidden;
@@ -54,7 +56,7 @@
 }
 #contactar:hover {
     cursor: default;
-    height: 500px;
+    height: 550px;
     width: 800px;
 }
 #loc {
@@ -105,16 +107,8 @@
 #titulo:hover, #anos:hover {
     cursor: default;
 }
-#submeter {
-    background-color: #db005c;
-    border:none;
-    color: white;
-    font-weight: bold;
-    width: 130px;
-    height: 45px;
-    border-radius: 10px;
-}
-#submeter:hover {
-    cursor:pointer;
-    font-weight: bold;
+
+#igreja {
+    width: 50vw;
+    height: 375px;
 }
