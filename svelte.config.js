@@ -9,6 +9,9 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
 			strict: false,
+			pages: 'docs',
+      		assets: 'docs',
+      		fallback: null,
 		}),
 	}
 };
