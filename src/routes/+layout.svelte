@@ -1,7 +1,3 @@
-<script>
-	//export const prerender = true;
-</script>
-
 <nav>
 	<a href="/"><b>Home</b></a>
 	<a href="/exercises"><b>Exercícios</b></a>
