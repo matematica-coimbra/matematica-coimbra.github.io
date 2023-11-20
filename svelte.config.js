@@ -1,7 +1,6 @@
 import adapter from "@sveltejs/adapter-static"; 
 // was "@sveltejs/adapter-auto"
 
-const dev = "production" === "development";
 
 /** @type {import(""@sveltejs/kit").Config} */
 const config = {
@@ -13,10 +12,8 @@ const config = {
         }),
         paths: {
             // change below to your repo name
-            base: dev ? "" : "",
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
         },
-        // hydrate the <div id="svelte"> element in src/app.html
-        //target: "#svelte"
     }
 };
 
